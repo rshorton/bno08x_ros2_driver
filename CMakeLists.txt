@@ -52,11 +52,11 @@ target_link_libraries(bno08x_driver
   sh2_library
 )
 
-ament_target_dependencies(
+target_link_libraries(
   bno08x_driver
-  "rclcpp"
-  "sensor_msgs"
-  "std_msgs"
+  rclcpp::rclcpp
+  sensor_msgs::sensor_msgs
+  std_msgs::std_msgs
 )
 
 # Install the executable and the config files
